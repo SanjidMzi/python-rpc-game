@@ -1,12 +1,12 @@
 import hashlib
 import hmac
 import secrets
-from tabulate import tabulate  # This is for the table generation
+from tabulate import tabulate 
 import random
 
 class KeyGenerator:
     def generate_key():
-        return secrets.token_hex(32)  # Generates a secure random 256-bit key (32 bytes * 8 bits)
+        return secrets.token_hex(32) 
 
 class HMACGenerator:
     def generate_hmac(key, message):
